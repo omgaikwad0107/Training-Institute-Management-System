@@ -1,0 +1,424 @@
+@charset "UTF-8";
+
+@charset "UTF-8";
+
+* {
+	font-family: Arial, Helvetica, sans-serif;
+	box-sizing: border-box;
+}
+
+body {
+	margin: 0;
+	background: #f8fafc;
+	color: #111827;
+}
+
+/* MAIN CONTENT */
+.main-content {
+	margin-left: 308px;
+	width: calc(100% - 308px);
+	min-height: 100vh;
+}
+
+/* HEADER */
+.top-header {
+	height: 76px;
+	background: #ffffff;
+	border-bottom: 1px solid #e5e7eb;
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	padding: 0 32px;
+}
+
+.header-left h1 {
+	margin: 0;
+	font-size: 24px;
+}
+
+.header-left p {
+	margin: 5px 0 0;
+	font-size: 13px;
+	color: #6b7280;
+}
+
+.header-right {
+	display: flex;
+	align-items: center;
+}
+
+.faculty-profile {
+	display: flex;
+	align-items: center;
+	gap: 10px;
+}
+
+.profile-avatar {
+	width: 40px;
+	height: 40px;
+	border-radius: 50%;
+	background: #2563eb;
+	color: #ffffff;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	font-weight: 600;
+}
+
+.profile-info {
+	display: flex;
+	flex-direction: column;
+	gap: 2px;
+}
+
+.profile-info strong {
+	font-size: 13px;
+}
+
+.profile-info span {
+	font-size: 11px;
+	color: #6b7280;
+}
+
+/* PAGE */
+.page-content {
+	padding: 30px 32px;
+}
+
+.page-title {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	margin-bottom: 25px;
+}
+
+.page-title h2 {
+	margin: 0;
+	font-size: 20px;
+}
+
+.page-title p {
+	margin: 6px 0 0;
+	font-size: 13px;
+	color: #6b7280;
+}
+
+/* COUNT */
+.student-count {
+	min-width: 120px;
+	background: #ffffff;
+	border: 1px solid #e5e7eb;
+	border-radius: 10px;
+	padding: 12px 18px;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+
+.count-number {
+	font-size: 24px;
+	font-weight: 700;
+	color: #2563eb;
+}
+
+.count-label {
+	margin-top: 3px;
+	font-size: 11px;
+	color: #6b7280;
+}
+
+/* MESSAGES */
+.success-message, .error-message {
+	padding: 12px 15px;
+	border-radius: 8px;
+	margin-bottom: 18px;
+	font-size: 13px;
+}
+
+.success-message {
+	background: #dcfce7;
+	color: #166534;
+	border: 1px solid #bbf7d0;
+}
+
+.error-message {
+	background: #fee2e2;
+	color: #991b1b;
+	border: 1px solid #fecaca;
+}
+
+/* CARD */
+.attendance-card {
+	background: #ffffff;
+	border: 1px solid #e5e7eb;
+	border-radius: 12px;
+	overflow: hidden;
+}
+
+.attendance-header {
+	padding: 20px;
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	border-bottom: 1px solid #e5e7eb;
+}
+
+.attendance-header h3 {
+	margin: 0;
+	font-size: 17px;
+}
+
+.attendance-header p {
+	margin: 5px 0 0;
+	font-size: 12px;
+	color: #6b7280;
+}
+
+/* DATE */
+.date-box {
+	display: flex;
+	flex-direction: column;
+	gap: 5px;
+}
+
+.date-box label {
+	font-size: 11px;
+	color: #6b7280;
+}
+
+.date-box input {
+	height: 38px;
+	padding: 0 10px;
+	border: 1px solid #d1d5db;
+	border-radius: 7px;
+	font-size: 13px;
+	outline: none;
+}
+
+.date-box input:focus {
+	border-color: #2563eb;
+}
+
+/* TABLE */
+.student-table-wrapper {
+	width: 100%;
+	overflow-x: auto;
+}
+
+.student-table {
+	width: 100%;
+	border-collapse: collapse;
+}
+
+.student-table th {
+	background: #f8fafc;
+	padding: 14px 16px;
+	text-align: left;
+	font-size: 12px;
+	color: #6b7280;
+	font-weight: 600;
+	border-bottom: 1px solid #e5e7eb;
+}
+
+.student-table td {
+	padding: 14px 16px;
+	font-size: 13px;
+	color: #374151;
+	border-bottom: 1px solid #f1f5f9;
+}
+
+.student-table tbody tr:hover {
+	background: #f8fafc;
+}
+
+/* STUDENT */
+.student-info {
+	display: flex;
+	align-items: center;
+	gap: 10px;
+	font-weight: 600;
+	color: #111827;
+}
+
+.student-avatar {
+	width: 34px;
+	height: 34px;
+	border-radius: 50%;
+	background: #eff6ff;
+	color: #2563eb;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	font-size: 13px;
+	font-weight: 700;
+}
+
+/* FORM */
+.attendance-form {
+	margin: 0;
+}
+
+.attendance-actions {
+	display: flex;
+	align-items: center;
+	gap: 8px;
+	flex-wrap: wrap;
+}
+
+.radio-option {
+	display: flex;
+	align-items: center;
+	gap: 5px;
+	padding: 7px 10px;
+	border-radius: 6px;
+	font-size: 11px;
+	font-weight: 600;
+	cursor: pointer;
+}
+
+.radio-option.present {
+	background: #dcfce7;
+	color: #166534;
+}
+
+.radio-option.absent {
+	background: #fee2e2;
+	color: #991b1b;
+}
+
+.remarks-input {
+	width: 120px;
+	height: 32px;
+	border: 1px solid #d1d5db;
+	border-radius: 6px;
+	padding: 0 8px;
+	font-size: 11px;
+	outline: none;
+}
+
+.remarks-input:focus {
+	border-color: #2563eb;
+}
+
+.save-btn {
+	height: 32px;
+	padding: 0 14px;
+	border: none;
+	border-radius: 6px;
+	background: #2563eb;
+	color: #ffffff;
+	font-size: 11px;
+	font-weight: 600;
+	cursor: pointer;
+}
+
+.save-btn:hover {
+	background: #1d4ed8;
+}
+
+/* EMPTY */
+.empty-state {
+	padding: 60px 20px;
+	text-align: center;
+}
+
+.empty-icon {
+	font-size: 45px;
+	margin-bottom: 15px;
+}
+
+.empty-state h3 {
+	margin: 0;
+	font-size: 18px;
+}
+
+.empty-state p {
+	margin: 8px 0 0;
+	font-size: 13px;
+	color: #6b7280;
+}
+
+/* RESPONSIVE */
+@media ( max-width : 1100px) {
+	.student-table th, .student-table td {
+		padding: 12px;
+	}
+	.remarks-input {
+		width: 100px;
+	}
+}
+
+@media ( max-width : 768px) {
+	.main-content {
+		margin-left: 240px;
+		width: calc(100% - 240px);
+	}
+	.top-header {
+		padding: 0 20px;
+	}
+	.page-content {
+		padding: 25px 20px;
+	}
+	.profile-info {
+		display: none;
+	}
+	.attendance-header {
+		align-items: flex-start;
+		gap: 15px;
+	}
+}
+
+@media ( max-width : 600px) {
+	.main-content {
+		margin-left: 0;
+		width: 100%;
+	}
+	.top-header {
+		height: 68px;
+		padding: 0 16px;
+	}
+	.header-left h1 {
+		font-size: 20px;
+	}
+	.header-left p {
+		font-size: 11px;
+	}
+	.page-content {
+		padding: 20px 15px;
+	}
+	.page-title {
+		flex-direction: column;
+		align-items: stretch;
+		gap: 15px;
+	}
+	.student-count {
+		align-self: flex-start;
+	}
+	.attendance-header {
+		flex-direction: column;
+	}
+	.date-box {
+		width: 100%;
+	}
+	.date-box input {
+		width: 100%;
+	}
+}
+
+@media ( max-width : 400px) {
+	.top-header {
+		padding: 0 12px;
+	}
+	.page-content {
+		padding: 18px 12px;
+	}
+	.attendance-header {
+		padding: 16px;
+	}
+	.student-table th, .student-table td {
+		padding: 10px;
+	}
+	.remarks-input {
+		width: 90px;
+	}
+}

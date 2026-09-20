@@ -1,0 +1,297 @@
+@charset "UTF-8";
+
+* {
+	box-sizing: border-box;
+}
+
+body {
+	margin: 0;
+	font-family: Arial, sans-serif;
+	background: #f4f7fb;
+	color: #1f2937;
+}
+
+/* =========================
+   Main Content
+========================= */
+.main-content {
+	margin-left: 308px;
+	width: calc(100% - 308px);
+	min-height: 100vh;
+}
+
+/* =========================
+   Header
+========================= */
+.top-header {
+	height: 82px;
+	background: white;
+	border-bottom: 1px solid #e5e7eb;
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	padding: 0 30px;
+}
+
+.header-left h1 {
+	margin: 0;
+	font-size: 24px;
+	color: #111827;
+}
+
+.header-left p {
+	margin: 5px 0 0;
+	color: #6b7280;
+	font-size: 13px;
+}
+
+.faculty-profile {
+	display: flex;
+	align-items: center;
+	gap: 10px;
+}
+
+.profile-avatar {
+	width: 40px;
+	height: 40px;
+	border-radius: 50%;
+	background: #2563eb;
+	color: white;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	font-weight: bold;
+}
+
+.profile-info {
+	display: flex;
+	flex-direction: column;
+}
+
+.profile-info strong {
+	font-size: 14px;
+}
+
+.profile-info span {
+	font-size: 11px;
+	color: #6b7280;
+}
+
+/* =========================
+   Page Content
+========================= */
+.page-content {
+	padding: 30px;
+}
+
+.page-title {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	margin-bottom: 22px;
+}
+
+.page-title h2 {
+	margin: 0;
+	font-size: 20px;
+}
+
+.page-title p {
+	margin: 5px 0 0;
+	color: #6b7280;
+	font-size: 13px;
+}
+
+/* =========================
+   Student Count
+========================= */
+.student-count {
+	background: white;
+	padding: 12px 18px;
+	border-radius: 8px;
+	border: 1px solid #e5e7eb;
+	font-size: 13px;
+	color: #6b7280;
+}
+
+.student-count strong {
+	color: #2563eb;
+	font-size: 17px;
+}
+
+/* =========================
+   Table Card
+========================= */
+.student-table-card {
+	background: white;
+	border-radius: 12px;
+	border: 1px solid #e5e7eb;
+	overflow: hidden;
+}
+
+.table-wrapper {
+	width: 100%;
+	overflow-x: auto;
+}
+
+table {
+	width: 100%;
+	min-width: 900px;
+	border-collapse: collapse;
+}
+
+thead {
+	background: #f8fafc;
+}
+
+th {
+	text-align: left;
+	padding: 15px 18px;
+	font-size: 12px;
+	color: #6b7280;
+	font-weight: 600;
+	border-bottom: 1px solid #e5e7eb;
+}
+
+td {
+	padding: 15px 18px;
+	font-size: 13px;
+	border-bottom: 1px solid #f1f5f9;
+}
+
+tbody tr:hover {
+	background: #f8fafc;
+}
+
+/* =========================
+   Student Information
+========================= */
+.student-info {
+	display: flex;
+	align-items: center;
+	gap: 10px;
+}
+
+.student-avatar {
+	width: 36px;
+	height: 36px;
+	border-radius: 50%;
+	background: #ede9fe;
+	color: #7c3aed;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	font-weight: bold;
+	flex-shrink: 0;
+}
+
+.student-info div:last-child {
+	display: flex;
+	flex-direction: column;
+	gap: 3px;
+}
+
+.student-info strong {
+	font-size: 13px;
+}
+
+.student-info span {
+	font-size: 11px;
+	color: #9ca3af;
+}
+
+/* =========================
+   Status
+========================= */
+.status-badge {
+	display: inline-block;
+	padding: 5px 10px;
+	border-radius: 20px;
+	background: #dcfce7;
+	color: #166534;
+	font-size: 11px;
+	font-weight: 600;
+}
+
+/* =========================
+   Empty State
+========================= */
+.empty-state {
+	padding: 80px 20px;
+	text-align: center;
+}
+
+.empty-icon {
+	font-size: 42px;
+	margin-bottom: 15px;
+}
+
+.empty-state h3 {
+	margin: 0 0 8px;
+	font-size: 18px;
+}
+
+.empty-state p {
+	margin: 0;
+	color: #6b7280;
+	font-size: 13px;
+}
+
+/* =========================
+   Responsive
+========================= */
+@media ( max-width : 768px) {
+	.main-content {
+		margin-left: 240px;
+		width: calc(100% - 240px);
+	}
+	.top-header {
+		padding: 0 20px;
+	}
+	.page-content {
+		padding: 20px;
+	}
+	.page-title {
+		align-items: flex-start;
+		gap: 15px;
+		flex-direction: column;
+	}
+	.profile-info {
+		display: none;
+	}
+}
+
+@media ( max-width : 600px) {
+	.main-content {
+		margin-left: 0;
+		width: 100%;
+	}
+	.top-header {
+		height: 70px;
+		padding: 0 15px;
+	}
+	.header-left h1 {
+		font-size: 20px;
+	}
+	.page-content {
+		padding: 15px;
+	}
+	.student-count {
+		width: 100%;
+	}
+}
+
+@media ( max-width : 400px) {
+	.header-left h1 {
+		font-size: 18px;
+	}
+	.header-left p {
+		font-size: 11px;
+	}
+	.page-title h2 {
+		font-size: 18px;
+	}
+	.empty-state {
+		padding: 60px 15px;
+	}
+}

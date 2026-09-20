@@ -1,0 +1,309 @@
+@charset "UTF-8";
+
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+body {
+	font-family: Arial, Helvetica, sans-serif;
+	background: #f5f7fb;
+	color: #17263d;
+}
+
+/* Main Content */
+.main-content {
+	margin-left: 308px;
+	width: calc(100% - 308px);
+	min-height: 100vh;
+}
+
+/* Top Header */
+.top-header {
+	height: 80px;
+	background: #ffffff;
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	padding: 0 35px;
+	border-bottom: 1px solid #e5e7eb;
+}
+
+.header-left h3 {
+	font-size: 22px;
+	font-weight: 600;
+}
+
+.header-right {
+	display: flex;
+	align-items: center;
+	gap: 25px;
+}
+
+/* Notification */
+.notification {
+	position: relative;
+	font-size: 22px;
+	cursor: pointer;
+}
+
+.notification-dot {
+	position: absolute;
+	width: 8px;
+	height: 8px;
+	background: #e53935;
+	border-radius: 50%;
+	top: 0;
+	right: -2px;
+}
+
+/* Student Profile */
+.student-profile {
+	display: flex;
+	align-items: center;
+	gap: 10px;
+}
+
+.profile-avatar {
+	width: 42px;
+	height: 42px;
+	background: #2878df;
+	color: white;
+	border-radius: 50%;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	font-weight: bold;
+	font-size: 17px;
+}
+
+.profile-info {
+	display: flex;
+	flex-direction: column;
+	gap: 3px;
+}
+
+.profile-info strong {
+	font-size: 14px;
+}
+
+.profile-info span {
+	font-size: 12px;
+	color: #718096;
+}
+
+/* Page Content */
+.page-content {
+	padding: 35px;
+}
+
+/* Page Heading */
+.page-heading {
+	margin-bottom: 25px;
+}
+
+.page-heading h1 {
+	font-size: 28px;
+	margin-bottom: 8px;
+}
+
+.page-heading p {
+	color: #718096;
+	font-size: 14px;
+}
+
+/* Batch Card */
+.batch-card {
+	background: #ffffff;
+	border-radius: 10px;
+	border: 1px solid #e5e7eb;
+	padding: 28px;
+	box-shadow: 0 2px 8px rgba(0, 0, 0, 0.04);
+}
+
+/* Batch Header */
+.batch-header {
+	display: flex;
+	align-items: center;
+	gap: 18px;
+	padding-bottom: 25px;
+	border-bottom: 1px solid #e5e7eb;
+}
+
+.batch-icon {
+	width: 58px;
+	height: 58px;
+	background: #eaf2ff;
+	border-radius: 10px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	font-size: 28px;
+}
+
+.batch-title h2 {
+	font-size: 22px;
+	margin-bottom: 7px;
+}
+
+.batch-title p {
+	color: #718096;
+	margin-top: 7px;
+	font-size: 14px;
+}
+
+/* Status */
+.batch-status {
+	display: inline-block;
+	background: #e7f7ed;
+	color: #198754;
+	padding: 5px 12px;
+	border-radius: 20px;
+	font-size: 12px;
+	font-weight: 600;
+}
+
+/* Information Grid */
+.batch-info-grid {
+	display: grid;
+	grid-template-columns: repeat(4, 1fr);
+	gap: 18px;
+	margin-top: 25px;
+}
+
+.info-box {
+	background: #f8fafc;
+	border: 1px solid #e5e7eb;
+	border-radius: 8px;
+	padding: 18px;
+}
+
+.info-box span {
+	display: block;
+	font-size: 12px;
+	color: #718096;
+	margin-bottom: 8px;
+}
+
+.info-box strong {
+	font-size: 14px;
+}
+
+.active-text {
+	color: #198754;
+}
+
+/* Schedule */
+.schedule-section {
+	margin-top: 30px;
+}
+
+.schedule-section h3 {
+	font-size: 18px;
+	margin-bottom: 15px;
+}
+
+.schedule-grid {
+	display: grid;
+	grid-template-columns: 1fr 1fr;
+	gap: 18px;
+}
+
+.schedule-box {
+	background: #f8fafc;
+	border: 1px solid #e5e7eb;
+	border-radius: 8px;
+	padding: 18px;
+}
+
+.schedule-box span {
+	display: block;
+	font-size: 12px;
+	color: #718096;
+	margin-bottom: 8px;
+}
+
+.schedule-box strong {
+	font-size: 14px;
+}
+
+/* Footer */
+.batch-footer {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	margin-top: 30px;
+	padding-top: 22px;
+	border-top: 1px solid #e5e7eb;
+}
+
+.footer-info {
+	font-size: 14px;
+	color: #4a5568;
+}
+
+.back-btn {
+	text-decoration: none;
+	background: #2878df;
+	color: white;
+	padding: 10px 18px;
+	border-radius: 6px;
+	font-size: 14px;
+	transition: 0.2s;
+}
+
+.back-btn:hover {
+	background: #1459ad;
+}
+
+/* Information Card */
+.info-card {
+	margin-top: 25px;
+	background: #ffffff;
+	border: 1px solid #e5e7eb;
+	border-radius: 10px;
+	padding: 22px;
+	display: flex;
+	align-items: center;
+	gap: 18px;
+}
+
+.info-icon {
+	font-size: 28px;
+}
+
+.info-content h3 {
+	font-size: 17px;
+	margin-bottom: 6px;
+}
+
+.info-content p {
+	font-size: 13px;
+	color: #718096;
+}
+
+/* Responsive */
+@media ( max-width : 1000px) {
+	.batch-info-grid {
+		grid-template-columns: repeat(2, 1fr);
+	}
+}
+
+@media ( max-width : 700px) {
+	.main-content {
+		margin-left: 0;
+		width: 100%;
+	}
+	.page-content {
+		padding: 20px;
+	}
+	.batch-info-grid, .schedule-grid {
+		grid-template-columns: 1fr;
+	}
+	.batch-footer {
+		flex-direction: column;
+		align-items: flex-start;
+		gap: 15px;
+	}
+}

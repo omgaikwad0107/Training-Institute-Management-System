@@ -1,0 +1,86 @@
+@charset "UTF-8";
+
+@charset "UTF-8";
+
+/* =========================================
+   SIDEBAR
+========================================= */
+.sidebar {
+	width: 308px;
+	min-height: 100vh;
+	background: #17263d;
+	color: white;
+	display: flex;
+	flex-direction: column;
+	position: fixed;
+	left: 0;
+	top: 0;
+	bottom: 0;
+}
+
+/* LOGO */
+.logo-section {
+	height: 78px;
+	background: #1459ad;
+	display: flex;
+	align-items: center;
+	padding: 0 28px;
+	gap: 15px;
+}
+
+.logo-icon {
+	font-size: 35px;
+}
+
+.logo-text h2 {
+	font-size: 19px;
+	font-weight: 600;
+}
+
+.logo-text p {
+	font-size: 17px;
+	margin-top: 2px;
+}
+
+/* SIDEBAR MENU */
+.sidebar-menu {
+	padding: 25px 13px;
+}
+
+.menu-item {
+	height: 53px;
+	display: flex;
+	align-items: center;
+	gap: 20px;
+	color: #ffffff;
+	text-decoration: none;
+	padding: 0 18px;
+	margin-bottom: 7px;
+	border-radius: 6px;
+	font-size: 16px;
+	transition: 0.2s;
+}
+
+.menu-item:hover {
+	background: #243a5b;
+}
+
+.menu-item.active {
+	background: #2878df;
+}
+
+.menu-icon {
+	width: 28px;
+	text-align: center;
+	font-size: 23px;
+}
+
+.logout-section {
+	margin-top: auto;
+	padding: 15px 13px 25px;
+	border-top: 1px solid #40516b;
+}
+
+.logout:hover {
+	background: #7b2730;
+}

@@ -1,0 +1,495 @@
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+body {
+	font-family: Arial, Helvetica, sans-serif;
+	background: #f5f7fb;
+	color: #333;
+}
+
+/* =====================================================
+   MAIN PAGE
+===================================================== */
+.student-list-page {
+	min-height: 100vh;
+	margin-left: 308px;
+	width: calc(100% - 308px);
+	background: #f5f7fb;
+}
+
+/* =====================================================
+   HEADER
+===================================================== */
+.top-header {
+	height: 78px;
+	background: #ffffff;
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	padding: 0 35px;
+	border-bottom: 1px solid #e5e7eb;
+}
+
+.header-left h2 {
+	margin: 0;
+	color: #17263d;
+	font-size: 22px;
+}
+
+.header-left span {
+	display: block;
+	margin-top: 4px;
+	color: #777;
+	font-size: 13px;
+}
+
+/* =====================================================
+   ADMIN PROFILE
+===================================================== */
+.admin-profile {
+	display: flex;
+	align-items: center;
+	gap: 12px;
+}
+
+.profile-icon {
+	width: 42px;
+	height: 42px;
+	border-radius: 50%;
+	background: #2878df;
+	color: #ffffff;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	font-weight: bold;
+	font-size: 18px;
+}
+
+.profile-info {
+	display: flex;
+	flex-direction: column;
+}
+
+.profile-info strong {
+	color: #17263d;
+	font-size: 14px;
+}
+
+.profile-info small {
+	color: #777;
+	margin-top: 3px;
+}
+
+/* =====================================================
+   MAIN CONTENT
+===================================================== */
+.main-content {
+	width: 100%;
+	padding: 35px;
+}
+
+/* =====================================================
+   PAGE HEADING
+===================================================== */
+.page-heading {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	margin-bottom: 25px;
+}
+
+.page-heading h1 {
+	color: #17263d;
+	font-size: 30px;
+}
+
+.page-heading p {
+	margin-top: 8px;
+	color: #777;
+	font-size: 14px;
+}
+
+/* =====================================================
+   ADD STUDENT BUTTON
+===================================================== */
+.add-student-btn {
+	text-decoration: none;
+	background: #2878df;
+	color: #ffffff;
+	padding: 12px 20px;
+	border-radius: 6px;
+	font-size: 14px;
+	font-weight: 600;
+	transition: 0.2s;
+}
+
+.add-student-btn span {
+	font-size: 18px;
+	margin-right: 5px;
+}
+
+.add-student-btn:hover {
+	background: #1459ad;
+}
+
+/* =====================================================
+   SUCCESS / ERROR MESSAGE
+===================================================== */
+.success-message {
+	background: #e7f7ed;
+	color: #218838;
+	border: 1px solid #b8e5c8;
+	padding: 13px 16px;
+	border-radius: 6px;
+	margin-bottom: 20px;
+	font-size: 14px;
+}
+
+.error-message {
+	background: #ffe5e5;
+	color: #c62828;
+	border: 1px solid #f5b5b5;
+	padding: 13px 16px;
+	border-radius: 6px;
+	margin-bottom: 20px;
+	font-size: 14px;
+}
+
+/* =====================================================
+   TABLE SECTION
+===================================================== */
+.student-table-section {
+	background: #ffffff;
+	border-radius: 10px;
+	box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+	overflow: hidden;
+}
+
+/* =====================================================
+   SECTION HEADER
+===================================================== */
+.section-header {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	padding: 22px 25px;
+	border-bottom: 1px solid #eeeeee;
+}
+
+.section-header h2 {
+	color: #17263d;
+	font-size: 19px;
+}
+
+.section-header p {
+	color: #777;
+	margin-top: 6px;
+	font-size: 13px;
+}
+
+.student-count {
+	color: #777;
+	font-size: 14px;
+}
+
+.student-count strong {
+	color: #2878df;
+	font-size: 16px;
+}
+
+/* =====================================================
+   TABLE CONTAINER
+===================================================== */
+.table-container {
+	width: 100%;
+	overflow-x: auto;
+}
+
+/* =====================================================
+   TABLE
+===================================================== */
+.student-table {
+	width: 100%;
+	border-collapse: collapse;
+	min-width: 1100px;
+}
+
+.student-table thead {
+	background: #f7f9fc;
+}
+
+.student-table th {
+	padding: 15px 14px;
+	text-align: left;
+	color: #555;
+	font-size: 12px;
+	font-weight: 700;
+	text-transform: uppercase;
+	border-bottom: 1px solid #e5e7eb;
+	white-space: nowrap;
+}
+
+.student-table td {
+	padding: 15px 14px;
+	color: #555;
+	font-size: 13px;
+	border-bottom: 1px solid #eeeeee;
+	vertical-align: middle;
+}
+
+.student-table tbody tr {
+	transition: 0.2s;
+}
+
+.student-table tbody tr:hover {
+	background: #f9fbff;
+}
+
+.student-table tbody tr:last-child td {
+	border-bottom: none;
+}
+
+/* =====================================================
+   STUDENT NAME
+===================================================== */
+.student-name {
+	display: flex;
+	align-items: center;
+	gap: 10px;
+	min-width: 180px;
+}
+
+.student-avatar {
+	width: 38px;
+	height: 38px;
+	flex-shrink: 0;
+	border-radius: 50%;
+	background: #e8f1ff;
+	color: #2878df;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	font-weight: bold;
+	font-size: 14px;
+}
+
+.student-name div:last-child {
+	display: flex;
+	flex-direction: column;
+}
+
+.student-name strong {
+	color: #17263d;
+	font-size: 13px;
+}
+
+.student-name small {
+	color: #999;
+	margin-top: 3px;
+	font-size: 11px;
+}
+
+/* =====================================================
+   STATUS BADGE
+===================================================== */
+.status-badge {
+	display: inline-block;
+	padding: 6px 11px;
+	border-radius: 20px;
+	font-size: 11px;
+	font-weight: 600;
+}
+
+.status-badge.active {
+	background: #e7f7ed;
+	color: #218838;
+}
+
+.status-badge.inactive {
+	background: #fff0f0;
+	color: #d32f2f;
+}
+
+.status-badge.completed {
+	background: #fff7df;
+	color: #a46b00;
+}
+
+/* =====================================================
+   ACTION BUTTONS
+===================================================== */
+.action-buttons {
+	display: flex;
+	align-items: center;
+	gap: 7px;
+	white-space: nowrap;
+}
+
+.edit-btn,
+.delete-btn {
+	text-decoration: none;
+	padding: 7px 12px;
+	border-radius: 5px;
+	font-size: 12px;
+	font-weight: 600;
+	transition: 0.2s;
+}
+
+/* EDIT */
+.edit-btn {
+	background: #e8f1ff;
+	color: #2878df;
+	border: 1px solid #c9dcfa;
+}
+
+.edit-btn:hover {
+	background: #2878df;
+	color: #ffffff;
+}
+
+/* DELETE */
+.delete-btn {
+	background: #fff0f0;
+	color: #d32f2f;
+	border: 1px solid #f3c5c5;
+}
+
+.delete-btn:hover {
+	background: #d32f2f;
+	color: #ffffff;
+}
+
+/* =====================================================
+   EMPTY STATE
+===================================================== */
+.empty-state {
+	text-align: center;
+	padding: 70px 20px;
+}
+
+.empty-icon {
+	font-size: 55px;
+	margin-bottom: 15px;
+}
+
+.empty-state h2 {
+	color: #17263d;
+	font-size: 22px;
+	margin-bottom: 8px;
+}
+
+.empty-state p {
+	color: #777;
+	font-size: 14px;
+	margin-bottom: 22px;
+}
+
+.empty-add-btn {
+	display: inline-block;
+	text-decoration: none;
+	background: #2878df;
+	color: #ffffff;
+	padding: 11px 18px;
+	border-radius: 6px;
+	font-size: 14px;
+	font-weight: 600;
+	transition: 0.2s;
+}
+
+.empty-add-btn:hover {
+	background: #1459ad;
+}
+
+/* =====================================================
+   BOTTOM ACTIONS
+===================================================== */
+.bottom-actions {
+	display: flex;
+	gap: 12px;
+	margin-top: 20px;
+}
+
+.secondary-btn {
+	text-decoration: none;
+	background: #ffffff;
+	color: #2878df;
+	border: 1px solid #2878df;
+	padding: 10px 17px;
+	border-radius: 6px;
+	font-size: 13px;
+	transition: 0.2s;
+}
+
+.secondary-btn:hover {
+	background: #2878df;
+	color: #ffffff;
+}
+
+/* =====================================================
+   RESPONSIVE
+===================================================== */
+@media (max-width : 1000px) {
+	.student-list-page {
+		margin-left: 308px;
+		width: calc(100% - 308px);
+	}
+
+	.main-content {
+		padding: 25px;
+	}
+
+	.page-heading h1 {
+		font-size: 26px;
+	}
+}
+
+@media (max-width : 700px) {
+	.student-list-page {
+		margin-left: 0;
+		width: 100%;
+	}
+
+	.top-header {
+		padding: 0 20px;
+	}
+
+	.main-content {
+		padding: 20px;
+	}
+
+	.profile-info {
+		display: none;
+	}
+
+	.page-heading {
+		flex-direction: column;
+		align-items: flex-start;
+		gap: 15px;
+	}
+
+	.page-heading h1 {
+		font-size: 25px;
+	}
+
+	.add-student-btn {
+		width: 100%;
+		text-align: center;
+	}
+
+	.section-header {
+		flex-direction: column;
+		align-items: flex-start;
+		gap: 12px;
+	}
+
+	.bottom-actions {
+		flex-direction: column;
+	}
+
+	.secondary-btn {
+		text-align: center;
+	}
+}
